@@ -1,0 +1,354 @@
+/****************************/
+/***  ||  Soft reset  ||  ***/
+/****************************/
+:root {
+	font-size: 62.5%;
+	background-color: hsl(173, 42%, 75%);
+	box-sizing: border-box;
+}
+
+:root,
+body {
+	min-height: 100%;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+/*********************************/
+/***  ||  General styling  ||  ***/
+/*********************************/
+body,
+input,
+textarea {
+	font: 1.6rem / 1.8 "Raleway", sans-serif;
+	color: hsl(0, 0%, 27%);
+}
+
+h1,
+h2,
+h3 {
+	padding-bottom: 2rem;
+}
+
+p {
+	margin: 1rem 0;
+}
+
+a {
+	color: #f4f4f4;
+	font-weight: 600;
+	/* logo__img is 6.5rem */
+	line-height: 1.5;
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+}
+
+/***************************/
+/***  ||  Utilities  ||  ***/
+/***************************/
+.container {
+	/* improve the browser's handling of small windows */
+	max-width: 1024px;
+	margin: 0 auto;
+	padding: 0 2rem;
+	/* to recognize the height of any floated element; always shows the background and the content does not go outside it*/
+	overflow: auto;
+}
+
+.bg--white {
+	background-color: #f4f4f4;
+}
+
+.bg--lightpink {
+	background-color: hsl(5, 81%, 80%);
+	color: #f4f4f4;
+}
+
+.btn {
+	border-radius: 5px;
+	color: #f4f4f4;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 1.7rem;
+	padding: 1.3rem 2rem;
+}
+
+.btn--big {
+	width: 20rem;
+}
+
+.btn--medium {
+	width: 15rem;
+}
+
+.btn--pink {
+	background-color: hsl(5, 81%, 74%);
+}
+
+.btn--pink:hover {
+	background-color: hsl(5, 81%, 80%);
+}
+
+.btn--grey {
+	background-color: hsl(0, 0%, 27%);
+}
+
+.btn--grey:hover {
+	background-color: hsl(0, 0%, 40%);
+}
+
+.center {
+	text-align: center;
+}
+
+.clr {
+	clear: both;
+}
+
+.floatleft {
+	float: left;
+}
+
+.floatright {
+	float: right;
+}
+
+.l-heading {
+	font-size: 3.5rem;
+	line-height: 1.2;
+}
+
+.p-3 {
+	padding: 3rem;
+}
+
+.p-5 {
+	padding: 5rem;
+}
+
+.py-1 {
+	padding: 1rem 0;
+}
+
+.py-3 {
+	padding: 3rem 0;
+}
+
+.text--cursive {
+	font-family: "Indie Flower", cursive;
+}
+
+.text--primary {
+	color: hsl(5, 81%, 74%);
+}
+
+.text--secondary {
+	color: #f4f4f4;
+}
+
+.text--big {
+	font-size: 7rem;
+}
+
+.text--medium {
+	font-size: 4rem;
+}
+
+/***************************************/
+/***  ||  Header and navigation  ||  ***/
+/***************************************/
+.nav {
+	padding: 1rem 2rem;
+}
+
+.logo__img {
+	width: 6.4rem;
+	/* get rid of extra space, align with title */
+	vertical-align: bottom;
+}
+
+.logo__title {
+	color: inherit;
+	font-size: 3.2rem;
+	font-weight: 600;
+	margin-left: 0.5rem;
+	text-decoration: none;
+}
+
+.navbar li {
+	float: left;
+}
+
+.navbar li a {
+	display: block;
+	color: inherit;
+	padding: 2rem;
+	/* make sure the links are centered */
+	text-align: center;
+}
+
+.navbar li a:hover,
+.navbar li a.current {
+	background-color: hsl(5, 81%, 74%);
+	color: #f4f4f4;
+}
+
+/**************************/
+/***  ||  Showcase  ||  ***/
+/**************************/
+.showcase {
+	background: linear-gradient(hsla(0, 0%, 27%, 0.4), hsla(0, 0%, 27%, 0.7)),
+		url("/images/pixabay-silviarita.jpg") top center/cover no-repeat;
+	height: 60rem;
+	width: 100%;
+}
+
+.showcase__content {
+	color: #f4f4f4;
+	padding-top: 20rem;
+}
+
+.showcase h1 {
+	font-size: 6rem;
+	line-height: 1;
+}
+
+.showcase p {
+	font-size: 2rem;
+	padding-bottom: 2rem;
+}
+
+/***********************************/
+/***  ||  Home Info section  ||  ***/
+/***********************************/
+.home__info {
+	height: 40rem;
+}
+
+.info__img {
+	background: url("/images/pixabay-dagny-walter.jpg") center center/cover
+		no-repeat;
+	/* the image has to take up the whole space */
+	min-height: 100%;
+	width: 50%;
+}
+
+.info__content {
+	/* will not push the feature section down */
+	height: 100%;
+	padding: 3rem 5rem;
+	/* if the text goes outside of it will not be scrollbars */
+	overflow: hidden;
+	width: 50%;
+}
+
+.info__content p {
+	padding-bottom: 3rem;
+}
+
+/**************************************/
+/***  ||  Home Feature section  ||  ***/
+/**************************************/
+.icon {
+	width: 8rem;
+}
+
+.box {
+	width: 33.33%;
+}
+
+/*******************************/
+/***  ||  About section  ||  ***/
+/*******************************/
+.about__content {
+	width: 50%;
+	min-height: 100%;
+}
+
+.about__img {
+	width: 50%;
+	min-height: 100%;
+}
+
+.about__img img {
+	display: block;
+	/* %: is relative to the parent size of its parent */
+	width: 80%;
+	margin: 2rem auto;
+	border-radius: 50%;
+}
+
+/**************************************/
+/***  ||  Testimonials section  ||  ***/
+/**************************************/
+.testimonials {
+	background: linear-gradient(rgba(69, 69, 69, 0.7), rgba(69, 69, 69, 0.5)),
+		url("/images/pexels-afta-putta-gunawan.jpg") center center/cover no-repeat;
+	height: 100%;
+	padding-top: 10rem;
+}
+
+.testimonial {
+	border-radius: 0.5rem;
+	margin: 3rem 0;
+	padding: 2.5rem;
+	opacity: 0.9;
+	overflow: auto;
+	width: 100%;
+}
+
+.testimonial img {
+	border-radius: 50%;
+	margin-right: 2.5rem;
+	width: 10rem;
+}
+
+/******************************/
+/***  ||  Contact form  ||  ***/
+/******************************/
+.form-group {
+	margin-bottom: 2rem;
+}
+
+.form-group label {
+	display: block;
+	margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+	border: 1px #ddd solid;
+	padding: 1rem;
+	width: 100%;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+	border-color: hsl(173, 42%, 75%);
+	outline: none;
+}
+
+.form-group textarea {
+	height: 20rem;
+}
+
+/******************************/
+/***  ||  Contact info  ||  ***/
+/******************************/
+
+/************************/
+/***  ||  Footer  ||  ***/
+/************************/
+footer {
+	font-weight: 600;
+	padding: 2rem;
+}

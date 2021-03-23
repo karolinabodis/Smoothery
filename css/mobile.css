@@ -1,0 +1,86 @@
+/************************/
+/***  ||  Tablet  ||  ***/
+/************************/
+
+/***  ||  Header and navigation  ||  ***/
+header .floatleft,
+header .logo {
+	float: none;
+	text-align: center;
+}
+
+.logo__title {
+	font-size: 3.5rem;
+}
+
+nav .floatright {
+	float: none;
+}
+
+.navbar li {
+	float: none;
+	margin-top: 1rem;
+}
+
+.navbar li a {
+	padding: 1rem;
+}
+
+/***  ||  Home Info section  ||  ***/
+.home__info .floatleft,
+.home__info .floatright {
+	float: none;
+}
+
+.home__info {
+	height: 100%;
+}
+
+.info__img {
+	display: none;
+}
+
+.info__content {
+	padding: 5rem 3rem;
+	width: 100%;
+}
+
+/***  ||  Home Feature section  ||  ***/
+.home__features .floatleft,
+.home__features.floatright {
+	float: none;
+}
+
+.box {
+	width: 100%;
+}
+/***  ||  Contact info  ||  ***/
+.contact__info .box:not(:last-child) {
+	border-bottom: 1px dotted #f4f4f4;
+}
+
+/****************************/
+/***  ||  Smartphone  ||  ***/
+/****************************/
+
+@media (max-width: 500px) {
+	/***  ||  Showcase  ||  ***/
+	.showcase__content {
+		padding-top: 10rem;
+	}
+
+	/***  ||  About section  ||  ***/
+	.about__info .floatleft,
+	.about__info .floatright {
+		float: none;
+	}
+
+	.l-heading {
+		text-align: center;
+	}
+
+	.about__content,
+	.about__img {
+		width: 100%;
+	}
+}
