@@ -207,7 +207,7 @@ ul {
 /**************************/
 .showcase {
 	background: linear-gradient(hsla(0, 0%, 27%, 0.4), hsla(0, 0%, 27%, 0.7)),
-		url("/images/pixabay-silviarita.jpg") top center/cover no-repeat;
+		url("../images/pixabay-silviarita.jpg") top center/cover no-repeat;
 	height: 60rem;
 	width: 100%;
 }
@@ -235,7 +235,7 @@ ul {
 }
 
 .info__img {
-	background: url("/images/pixabay-dagny-walter.jpg") center center/cover
+	background: url("../images/pixabay-dagny-walter.jpg") center center/cover
 		no-repeat;
 	/* the image has to take up the whole space */
 	min-height: 100%;
@@ -292,7 +292,7 @@ ul {
 /**************************************/
 .testimonials {
 	background: linear-gradient(rgba(69, 69, 69, 0.7), rgba(69, 69, 69, 0.5)),
-		url("/images/pexels-afta-putta-gunawan.jpg") center center/cover no-repeat;
+		url("../images/pexels-afta-putta-gunawan.jpg") center center/cover no-repeat;
 	height: 100%;
 	padding-top: 10rem;
 }
