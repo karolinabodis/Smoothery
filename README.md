@@ -1,3 +1,3 @@
 # Smoothery
 
-A multi-page website using floats with desktop-first approach.
+A responsive multi-page website using floats with desktop-first approach.
